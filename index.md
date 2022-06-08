@@ -26,6 +26,20 @@ Syntax highlighted code block
 [Link](url) and ![Image](src)
 ```
 
+```markdown
+Syntax highlighted code block
+
+snapshots = list(db.collection(u'tests').get())
+for snap in snapshots :
+    doc_refs.append(snap.id)\
+
+pdDoc = pd.Series(doc_refs)
+print(pdDoc)
+pdDoc.to_csv('GeneralOutput/testnumbers.csv', index=False)
+```
+
+
+
 For more details see [Basic writing and formatting syntax](https://docs.github.com/en/github/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax).
 
 ### Jekyll Themes
